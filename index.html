@@ -1,0 +1,50 @@
+
+<!--
+Name: Connor McGrory
+Email: Connor_McGrory@student.uml.edu
+Date: December 6, 2016
+For: GUI Programming I, UMass Lowell
+Assignement No. 9
+
+This is the Scrabble asignment.
+I was able to get scoring to work but not with valid words unfortunately.
+It will score for any letters you enter.
+
+The double letter tile will double that letter score! :)
+
+There is a minor bug where if you hold a letter over a section that already
+has a tile, that section will clear out its data (thinking the tile in its
+spot was moved) meaning the score will be incorrect sometimes.
+
+Refreshing the page will give a new set of letters.
+The letters are pulled using the correct frequencies.
+
+-->
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scrabble</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <h1>Scrabble</h1>
+  <h3>Refresh the page for new letters!</h3>
+
+  <div id="board"></div>
+  <div id="myLetters"></div>
+
+  <div id="scoreDiv">
+    <button id="scoreButton">Check Score</buttton>
+    <p id="myScore">0</p>
+  </div>
+
+</body>
+</html>
